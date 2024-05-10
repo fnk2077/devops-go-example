@@ -12,6 +12,9 @@ import (
 )
 
 func main() {
+
+	password := "1234"
+	log.Println("Password: ", password)
 	connStr := os.Getenv("DB_CONNECTION")
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
