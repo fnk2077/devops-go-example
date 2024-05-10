@@ -85,7 +85,7 @@ jobs:
       - name: change image tag
         run: |
           git --version
-          git config user.name "thongthai.r@ku.th"
+          git config user.name "fnk2077"
           git config user.email "thongthai.r@ku.th"
           sed -i -E "s/ghcr.io\/fnk2077\/devops-go-example.*$/ghcr.io\/fnk2077\/devops-go-example:${GITHUB_SHA}/" kube-gitops/deployment.yml
           git add kube-gitops/deployment.yml
